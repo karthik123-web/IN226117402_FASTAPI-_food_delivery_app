@@ -1,57 +1,101 @@
-# FastAPI Food Delivery App
 
-This project is developed as part of my FastAPI internship final assignment. It is a backend application that simulates a basic food delivery system with menu management, cart operations, and order processing.
+# 🍕 FastAPI Food Delivery Backend
 
-## Project Overview
+A backend application built using FastAPI that simulates a real-world food delivery system. This project was developed as part of my FastAPI internship to demonstrate API design, backend logic, and workflow handling.
 
-The application allows users to:
-- View available food items
-- Add new items to the menu
-- Update and delete items
-- Add items to a cart
-- Place orders
-- Search, sort, and paginate data
+---
 
-All APIs are built using FastAPI and tested through Swagger UI.
+## 🚀 Project Overview
 
-## Features
+This application provides REST APIs to manage food items, handle cart operations, process orders, and perform advanced operations like search, sorting, and pagination.
 
-### 1. Menu Management
-- Get all menu items
-- Get item by ID
-- View available items
-- Summary of items
+All endpoints are tested and verified using Swagger UI.
+
+---
+
+## ✨ Features
+
+### 📋 Menu Management
+- View all menu items
+- Get item details by ID
 - Add new items with validation
-- Update item details
-- Delete items with conditions
+- Update existing items
+- Delete items with business rules
 
-### 2. Cart System
+### 🛒 Cart & Order Workflow
 - Add items to cart
-- View cart
+- View cart details
 - Calculate total price
-- Checkout functionality
+- Checkout and place orders
+- Store and retrieve order history
 
-### 3. Orders
-- Place orders from cart
-- Store order history
-- View all orders
-
-### 4. Advanced Functionalities
+### 🔍 Advanced Functionality
 - Search items (case-insensitive)
 - Sort items by price or name
-- Pagination support
-- Combined browsing (search + sort + pagination)
+- Pagination for large data
+- Combined endpoint (search + sort + pagination)
 
-## Technologies Used
-- Python
-- FastAPI
-- Pydantic
-- Uvicorn
+---
 
-## How to Run
+## 🛠️ Tech Stack
 
-1. Install dependencies:
-pip install -r requirements
+- 🐍 Python  
+- ⚡ FastAPI  
+- 📦 Pydantic  
+- 🚀 Uvicorn  
 
-# 2. Run the server
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Install Dependencies
+
+pip install -r requirements.txt
+
+### 2️⃣ Run the Server
+
 uvicorn main:app --reload
+
+### 3️⃣ Open Swagger UI
+
+http://127.0.0.1:8000/docs
+
+---
+
+## 📸 API Testing
+
+All endpoints are tested using Swagger UI.  
+Screenshots of all API responses are included in the `screenshots/` folder.
+
+---
+
+## 📌 Key Highlights
+
+- Clean API structure  
+- Proper input validation using Pydantic  
+- Full CRUD implementation  
+- Multi-step workflow (Cart → Checkout → Orders)  
+- Advanced APIs with search, sorting, and pagination  
+
+---
+
+## ⚠️ Notes
+
+- Data is stored in-memory (resets when server restarts)
+- This project focuses on backend logic and API design
+
+---
+
+
+## 📎 Repository Structure
+
+fastapi-food-delivery-app/ │ ├── main.py ├── README.md ├── requirements.txt └── screenshots/
+
+---
+
+## 🎯 Conclusion
+
+This project demonstrates practical backend development using FastAPI, covering all essential concepts from basic APIs to advanced data handling.
+
+
+---
